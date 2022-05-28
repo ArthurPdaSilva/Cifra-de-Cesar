@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #181818;
+    min-height: 100vh;
+}
+
+h1 {
+    text-shadow: 1px .1px 3px #919191;
+    font-size: 4em;
+}
+
+h1, legend, fieldset label, button {
+    color: #FFFFFF;
+}
+
+div.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form, div#localDaMensagem {
+    width: 100%;
+    gap: 30px;
+}
+
+form > input {
+    background-color: #0E0E0E;
+    border-radius: 5px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+form > input, button, div#localDaMensagem {
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+fieldset {
+    gap: 10px;
+}
+
+
+fieldset, form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+fieldset label, button {
+    cursor: pointer;
+}
+
+button {
+    background-color: #3EB72B;
+    padding: 10px;
+}
+
+div#localDaMensagem {
+    visibility: hidden;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    background-color: #0E0E0E;
+    border: 1px solid white;
+    color: white;
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    legend, fieldset label {
+        font-size: .8em;
+    }
+}

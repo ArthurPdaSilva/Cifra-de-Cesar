@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur P. da Silva">
+    <meta name="description" content="criptografia com cifra de César">
+    <meta name="keywords" content="js, cifra de cesar, onepage">
+    <title>Cifra de César</title>
+    <link rel="shortcut icon" href="assets/padlock.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>CIFRA DE CÉSAR</h1>
+        <form onsubmit="gerarMensagem(event)">
+            <input type="text" placeholder="Digita uma mensagem..." id="mensagem">
+
+            <fieldset>
+                <legend>O que deseja fazer com a mensagem?</legend>
+                <div>
+                    <input type="radio" name="cript" id="cript">
+                    <label for="cript">Criptografar</label>
+                </div>
+                <div>
+                    <input type="radio" name="cript" id="descript">
+                    <label for="descript">Descriptografar</label>
+                </div>
+            </fieldset>
+            
+            <button type="submit">Gerar</button>
+
+        </form>
+
+        <div id="localDaMensagem" title="Clique para copiar a mensagem" onclick="copiar()">
+            <p id="text">mensagem</p>
+        </div>
+    </div>
+    
+
+    <script src="dinamic.js"></script>
+</body>
+</html>
